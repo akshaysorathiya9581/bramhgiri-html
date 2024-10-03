@@ -1,0 +1,891 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Auther name
+* Template Name : Template name
+* File          : Main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+
+
+/* INDEX
+----------------------------------------------------------------------------------------
+01. General css
+02. 
+03. 
+-------------------------------------------------------------------------------------- */
+
+// 
+// variables
+// 
+$black: #000;
+$light-black: #212529;
+$white: #fff;
+$green: #8cc43f;
+$red: #ff0000;
+$red-hover: #e40000;
+$btn-hover: #6c9e28;
+$dm-grey: #5e5e5e;
+$light-grey: #999;
+$dm-light: #666666;
+// 
+// mixin
+// 
+@mixin Alfa-Slab-One {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+@mixin Arbutus-Slab {
+    font-family: 'Arbutus Slab', serif;
+}
+
+@mixin Oleo-Script {
+    font-family: 'Oleo Script', cursive;
+}
+
+@mixin Patua-One {
+    font-family: 'Patua One', cursive;
+}
+
+@mixin Mallanna {
+    font-family: 'Mallanna', sans-serif;
+}
+
+@mixin Courgette {
+    font-family: 'Courgette', cursive;
+}
+
+@mixin Cuprum {
+    font-family: 'Cuprum', sans-serif;
+}
+
+@mixin Lobster {
+    font-family: 'Lobster', cursive;
+}
+
+@mixin max-1199 {
+    @media screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin max-1024 {
+    @media screen and (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin max-991 {
+    @media screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin max-768 {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin max-767 {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin max-575 {
+    @media screen and (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin max-460 {
+    @media screen and (max-width: 460px) {
+        @content;
+    }
+}
+
+@mixin max-420 {
+    @media screen and (max-width: 420px) {
+        @content;
+    }
+}
+
+@mixin max-360 {
+    @media screen and (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin max-320 {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+@mixin section-cmn-padding {
+    padding: 80px 0;
+}
+
+@mixin cmn-btn {
+    font-size: 16px;
+    color: $white;
+    background-color: $green;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 8px 20px;
+    &:hover {
+        background-color: $btn-hover;
+    }
+}
+
+@mixin banner-cmn-padding {
+    padding: 100px 0;
+    padding-top: 145px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 300px;
+    h3.banner-title {
+        font-family: 'Patua One', cursive;
+        font-size: 40px;
+        color: $white;
+    }
+}
+
+
+/************************************/
+
+
+/***** 	   01. General css		 ****/
+
+
+/************************************/
+
+body {
+    font-size: 18px;
+    color: $light-black;
+    font-weight: 500;
+    font-family: Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $black;
+}
+
+a {
+    transition: all 0.5s;
+}
+
+h1 {}
+
+h2 {}
+
+h3.title {
+    font-size: 36px;
+    color: $black;
+    @include Arbutus-Slab;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+h3.adventure-title {
+    font-size: 30px;
+}
+
+p.description {
+    line-height: 24px;
+    color: $light-black;
+    font-size: 16px;
+    span {
+        color: $green;
+        display: inline-block;
+        font-weight: 600;
+    }
+}
+
+p.subtitle {
+    color: $white;
+    font-size: 16px;
+    @include Arbutus-Slab;
+    font-style: italic;
+}
+
+p.client-des {
+    @include Cuprum;
+    font-size: 22px;
+    color: $dm-grey;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+h4.title {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+}
+
+h5.title {
+    @include Arbutus-Slab;
+    color: $black;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h5.about-title {
+    color: $black;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h6.title {
+    font-size: 20px;
+    @include Arbutus-Slab;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    color: $black;
+}
+
+a:hover,
+a {
+    text-decoration: none;
+    outline: 0;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+input.form-control:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+button:focus,
+input:focus,
+img:focus,
+.slick-slide:focus,
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.transition {
+    transition: 700ms;
+}
+
+.page-link {
+    font-size: 16px;
+    color: $black;
+}
+
+.page-item.active .page-link {
+    background-color: $btn-hover;
+    border-color: $btn-hover;
+    color: $white;
+}
+
+.page-item:hover .page-link {
+    // color: $black;
+}
+
+.pagination {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.page-link:focus {
+    box-shadow: none;
+}
+
+
+/************************************/
+
+
+/***** 	   02. Header css		 ****/
+
+
+/************************************/
+
+header {
+    .topbar {
+        background-color: $black;
+        padding: 10px 0;
+        position: relative;
+        z-index: 10;
+        .logo {
+            width: 150px;
+            height: 80px;
+        }
+        .location-content {
+            height: 100%;
+            color: $white;
+        }
+        .icon i {
+            font-size: 26px;
+            margin-right: 20px;
+        }
+        .media-body h5,
+        .media-body p {
+            color: $white;
+        }
+        h5.title {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        a {
+            color: $green;
+            font-size: 14px;
+        }
+    }
+    .navbar {
+        background-color: $white;
+        padding-left: 5px;
+        padding-right: 10px;
+        .navbar-nav .nav-link {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: black;
+            padding: 8px 10px;
+            &:hover {
+                color: $green;
+            }
+        }
+        .btn {
+            padding: 8px 14px;
+            background-color: red;
+            color: $white !important;
+            border-radius: 0;
+            &:hover {
+                background-color: $red-hover !important;
+            }
+        }
+        .dropdown-menu {
+            border: 0;
+            border-radius: 0;
+            box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+        }
+        .dropdown-item.active,
+        .dropdown-item:hover,
+        .dropdown-item:active {
+            color: $white;
+            background-color: $btn-hover;
+        }
+    }
+    .header-main {
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+
+/************************************/
+
+
+/***** 	   03(1). Banner css	 ****/
+
+
+/************************************/
+
+.banner-section-main {
+    width: 100%;
+    position: relative;
+    .banner-slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        margin-top: -122px;
+        z-index: 0;
+    }
+    .banner-btn {
+        @include cmn-btn;
+        margin-top: 20px;
+    }
+    button.slick-arrow {
+        background: transparent;
+        position: absolute;
+        color: $white;
+        padding: 9px 13px;
+        border: 1px solid $white;
+        line-height: 12px;
+        font-size: 20px;
+        border-radius: 50%;
+    }
+    .banner-pre-btn {
+        left: 20px;
+        top: 55%;
+    }
+    .banner-nxt-btn {
+        right: 20px;
+        top: 55%;
+    }
+}
+
+
+/************************************/
+
+
+/***** 	   03(2). Home Event css	 ****/
+
+
+/************************************/
+
+.home-event-main {
+    @include section-cmn-padding;
+    p.description {
+        margin-bottom: 17px;
+    }
+    a.btn {
+        @include cmn-btn;
+    }
+    .event-inner {
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+        .title-content {
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #e35d5d;
+            color: $white;
+        }
+        p.subtitle {
+            margin-top: 5px;
+        }
+        .date-content {
+            padding: 20px;
+        }
+        .date-title {
+            font-size: 60px;
+            font-weight: bold;
+            color: #9dd058;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .month {
+            text-align: center;
+            font-size: 16px;
+            color: $black;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+/************************************/
+
+
+/***** 	   04. Things css	 ****/
+
+
+/************************************/
+
+.things-main {
+    @include section-cmn-padding;
+    background-image: url('../images/things-bg.jpg');
+    background-repeat: no-repeat;
+    padding-top: 0;
+    .content-inner {
+        padding: 44px 45px;
+        background-color: $white;
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+    }
+    h3.title {
+        text-align: center;
+    }
+    p.description {
+        line-height: 28px;
+    }
+    .btn-inn {
+        text-align: center;
+    }
+    .btn {
+        @include cmn-btn;
+        border-radius: 20px;
+        margin-top: 25px;
+        padding: 6px 26px;
+    }
+    .img-content {
+        position: relative;
+        transition: all 0.4s;
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+        img {
+            width: 100%;
+            height: 235px;
+            object-fit: cover;
+        }
+        span {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: $white;
+        }
+        &:hover {
+            transform: scale(0.9);
+            transition: all 0.4s;
+        }
+    }
+    .img-content:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+
+/************************************/
+
+
+/***** 	   05. Client Exp css	 ****/
+
+
+/************************************/
+
+.client-experience-main {
+    @include section-cmn-padding;
+    .blog-content {
+        padding: 0 45px;
+        padding-right: 80px;
+    }
+    h3.title {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    p.client-des {
+        padding: 20px 0;
+        &--second {
+            color: $green;
+            font-size: 16px;
+        }
+    }
+    // .blog-l {}
+}
+
+
+/****************************************/
+
+
+/***** 	   06. Accommodation css	 ****/
+
+
+/****************************************/
+
+.accommodation-main {
+    @include section-cmn-padding;
+    background-image: url('../images/accommodation-bg.jpg');
+    h3.title {
+        color: $white;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .accommodation-box {
+        background-color: #c5c5c5;
+        padding: 20px;
+    }
+    h6.title {
+        margin: 10px 0;
+    }
+    .blog-des {
+        li {
+            position: relative;
+            color: #212529;
+            padding-left: 30px;
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+        li i {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            font-size: 15px;
+        }
+    }
+}
+
+
+/********************************/
+
+
+/***** 	   07. Gallery css	 ****/
+
+
+/********************************/
+
+.home-gallery-main {
+    @include section-cmn-padding;
+    padding-bottom: 55px;
+    h3.title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    a {
+        margin-bottom: 25px;
+        display: block;
+        position: relative;
+        transition: all 0.6s;
+    }
+    .layer {
+        position: absolute;
+        height: 100%;
+        width: 0;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.6s;
+    }
+    a:hover .layer {
+        width: 100%;
+        transition: all 0.6s;
+    }
+}
+
+
+/********************************/
+
+
+/***** 	   08. Footer css	 ****/
+
+
+/********************************/
+
+footer {
+    .footer-top {
+        @include section-cmn-padding;
+        background-color: #2b2b2b;
+    }
+    h3.footer-title {
+        color: $white;
+        font-size: 22px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px dotted;
+        display: inline-block;
+        &--bottom {
+            border: 0;
+            margin: 0;
+            padding: 10px 0;
+        }
+    }
+    .footer-bottom {
+        background-color: #2b2b2b;
+        border-top: 1px solid gray;
+        padding: 30px 0;
+    }
+    p.footer-des {
+        color: $dm-light;
+        font-size: 15px;
+        line-height: 24px;
+        &--contact {
+            color: $white;
+        }
+        &--mail {
+            color: $green;
+            text-transform: uppercase;
+        }
+    }
+    .footer-links {
+        a {
+            color: $dm-light;
+            text-transform: uppercase;
+            font-size: 14PX;
+            font-weight: 500PX;
+            line-height: 30PX;
+            &:hover {
+                color: $green;
+            }
+        }
+    }
+    .form-control {
+        border-radius: 25px;
+        background-color: #3a3b3a;
+        height: 46px;
+        color: $white;
+        border: none;
+        font-size: 16px;
+        padding: 0 20px;
+        &:focus {
+            background-color: #3a3b3a;
+            color: $white;
+        }
+    }
+    .input-group-append .btn,
+    .input-group-prepend .btn {
+        z-index: 32;
+    }
+    .btn {
+        padding: 0 20px;
+        border: 0;
+        background-color: $green;
+        color: $white;
+        border-radius: 25px !important;
+        margin-left: -20px;
+        &:hover {
+            background-color: $btn-hover;
+            color: $white
+        }
+    }
+    .social-links {
+        text-align: right;
+    }
+    .social-links a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        margin: 4px 2px;
+        font-size: 16px;
+        color: $white;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        background: #454443;
+        &:hover {
+            background-color: #353535;
+            color: $btn-hover;
+        }
+    }
+}
+
+
+/******************************************/
+
+
+/***** 	   09. Temprature Widget css   ***/
+
+
+/*****************************************/
+
+.temprature-widget-main {
+    position: fixed;
+    top: 2px;
+    right: 2px;
+    z-index: 999;
+    .weather-info {
+        width: 110px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, .3);
+        background: $green;
+        transition: transform .2s ease;
+    }
+    .weather-info-wrapper {
+        display: grid;
+        grid-column-gap: 10px;
+        height: 100%;
+        margin: auto;
+        color: #FFF;
+    }
+    .info-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info-date h1 {
+        margin-bottom: 0.65rem;
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+    }
+    .info-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .weather-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    @keyframes animation-icon {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(1.3);
+        }
+    }
+    .weather-sunny {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 60 60' style='enable-background:new 0 0 60 60;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%23F0C419;' d='M30,0c-0.552,0-1,0.448-1,1v6c0,0.552,0.448,1,1,1s1-0.448,1-1V1C31,0.448,30.552,0,30,0z'/%3E%3Cpath style='fill:%23F0C419;' d='M30,52c-0.552,0-1,0.448-1,1v6c0,0.552,0.448,1,1,1s1-0.448,1-1v-6C31,52.448,30.552,52,30,52z'/%3E%3Cpath style='fill:%23F0C419;' d='M59,29h-6c-0.552,0-1,0.448-1,1s0.448,1,1,1h6c0.552,0,1-0.448,1-1S59.552,29,59,29z'/%3E%3Cpath style='fill:%23F0C419;' d='M8,30c0-0.552-0.448-1-1-1H1c-0.552,0-1,0.448-1,1s0.448,1,1,1h6C7.552,31,8,30.552,8,30z'/%3E%3Cpath style='fill:%23F0C419;' d='M46.264,14.736c0.256,0,0.512-0.098,0.707-0.293l5.736-5.736c0.391-0.391,0.391-1.023,0-1.414 s-1.023-0.391-1.414,0l-5.736,5.736c-0.391,0.391-0.391,1.023,0,1.414C45.752,14.639,46.008,14.736,46.264,14.736z'/%3E%3Cpath style='fill:%23F0C419;' d='M13.029,45.557l-5.736,5.736c-0.391,0.391-0.391,1.023,0,1.414C7.488,52.902,7.744,53,8,53 s0.512-0.098,0.707-0.293l5.736-5.736c0.391-0.391,0.391-1.023,0-1.414S13.42,45.166,13.029,45.557z'/%3E%3Cpath style='fill:%23F0C419;' d='M46.971,45.557c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l5.736,5.736 C51.488,52.902,51.744,53,52,53s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L46.971,45.557z'/%3E%3Cpath style='fill:%23F0C419;' d='M8.707,7.293c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l5.736,5.736 c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L8.707,7.293z'/%3E%3Cpath style='fill:%23F0C419;' d='M50.251,21.404c0.162,0.381,0.532,0.61,0.921,0.61c0.13,0,0.263-0.026,0.39-0.08l2.762-1.172 c0.508-0.216,0.746-0.803,0.53-1.311s-0.804-0.746-1.311-0.53l-2.762,1.172C50.272,20.309,50.035,20.896,50.251,21.404z'/%3E%3Cpath style='fill:%23F0C419;' d='M9.749,38.596c-0.216-0.508-0.803-0.746-1.311-0.53l-2.762,1.172 c-0.508,0.216-0.746,0.803-0.53,1.311c0.162,0.381,0.532,0.61,0.921,0.61c0.13,0,0.263-0.026,0.39-0.08l2.762-1.172 C9.728,39.691,9.965,39.104,9.749,38.596z'/%3E%3Cpath style='fill:%23F0C419;' d='M54.481,38.813L51.7,37.688c-0.511-0.207-1.095,0.041-1.302,0.553 c-0.207,0.512,0.041,1.095,0.553,1.302l2.782,1.124c0.123,0.049,0.25,0.073,0.374,0.073c0.396,0,0.771-0.236,0.928-0.626 C55.241,39.603,54.994,39.02,54.481,38.813z'/%3E%3Cpath style='fill:%23F0C419;' d='M5.519,21.188L8.3,22.312c0.123,0.049,0.25,0.073,0.374,0.073c0.396,0,0.771-0.236,0.928-0.626 c0.207-0.512-0.041-1.095-0.553-1.302l-2.782-1.124c-0.513-0.207-1.095,0.04-1.302,0.553C4.759,20.397,5.006,20.98,5.519,21.188z' /%3E%3Cpath style='fill:%23F0C419;' d='M39.907,50.781c-0.216-0.508-0.803-0.745-1.311-0.53c-0.508,0.216-0.746,0.803-0.53,1.311 l1.172,2.762c0.162,0.381,0.532,0.61,0.921,0.61c0.13,0,0.263-0.026,0.39-0.08c0.508-0.216,0.746-0.803,0.53-1.311L39.907,50.781z' /%3E%3Cpath style='fill:%23F0C419;' d='M21.014,9.829c0.13,0,0.263-0.026,0.39-0.08c0.508-0.216,0.746-0.803,0.53-1.311l-1.172-2.762 c-0.215-0.509-0.802-0.747-1.311-0.53c-0.508,0.216-0.746,0.803-0.53,1.311l1.172,2.762C20.254,9.6,20.625,9.829,21.014,9.829z'/%3E%3Cpath style='fill:%23F0C419;' d='M21.759,50.398c-0.511-0.205-1.095,0.04-1.302,0.553l-1.124,2.782 c-0.207,0.512,0.041,1.095,0.553,1.302c0.123,0.049,0.25,0.073,0.374,0.073c0.396,0,0.771-0.236,0.928-0.626l1.124-2.782 C22.519,51.188,22.271,50.605,21.759,50.398z'/%3E%3Cpath style='fill:%23F0C419;' d='M38.615,9.675c0.396,0,0.771-0.236,0.928-0.626l1.124-2.782c0.207-0.512-0.041-1.095-0.553-1.302 c-0.511-0.207-1.095,0.041-1.302,0.553L37.688,8.3c-0.207,0.512,0.041,1.095,0.553,1.302C38.364,9.651,38.491,9.675,38.615,9.675z' /%3E%3C/g%3E%3Ccircle style='fill:%23F0C419;' cx='30' cy='30' r='20'/%3E%3Ccircle style='fill:%23EDE21B;' cx='30' cy='30' r='15'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+        transition: all .2s ease-in;
+        animation: animation-icon .8s infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+    }
+    .weather-temperature {
+        font-size: 18;
+        font-weight: 800;
+    }
+    .weather-city {
+        margin-top: 0.65rem;
+        font-size: 14px;
+    }
+}
+
+.weather-modal {
+    padding-right: 0 !important;
+    .modal-content {
+        border-radius: 0;
+        border: 0;
+        box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+    .modal-header {
+        padding-bottom: 0;
+        border-bottom: 0;
+        position: relative;
+        button {
+            position: absolute;
+            margin: 0;
+            right: 0;
+            top: 0;
+            font-size: 18px;
+        }
+        .modal-title {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@import 'about.scss';
+@import 'amenities.scss';
+@import 'contactus.scss';
+@import 'dining.scss';
+@import 'gallery.scss';
+@import 'resort.scss';
+@import 'rooms.scss';
+@import 'adventure-sports.scss';
+@import 'tourist.scss';
+@import 'event-calender.scss';
+@import 'booking-form.scss';
+@import 'feedback-form.scss';
+@import 'events.scss';

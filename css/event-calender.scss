@@ -1,0 +1,51 @@
+// ********************
+// Event Page Starts
+// ********************
+// Event banner Starts
+.event-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/contact-banner.jpg');
+}
+
+// Event banner Ends
+// 
+// Event section main Starts
+.event-section-main {
+    @include section-cmn-padding;
+    h3.title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .fc-event,
+    .fc-event-dot {
+        background-color: $green !important;
+        border-color: $green;
+        color: $white !important;
+        padding: 10px;
+        text-align: center;
+    }
+    .fc-toolbar {
+        margin-bottom: 25px;
+    }
+    .fc-button-group {
+        button {
+            padding: 4px 8px;
+            border-radius: 0;
+            background-color: $btn-hover;
+            color: $white;
+            border: 0;
+            margin: 0 5px;
+            background-image: unset;
+            font-size: 16px;
+        }
+    }
+    .fc .fc-toolbar>*>* {
+        border-radius: 0;
+    }
+    .fc-unthemed td.fc-today {
+        background: #1f30a9;
+        color: #fff;
+    }
+}
+
+// Event section main Ends

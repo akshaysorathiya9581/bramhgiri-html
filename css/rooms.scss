@@ -1,0 +1,98 @@
+// ********************
+// Rooms Page Starts
+// ********************
+// Rooms banner Starts
+.rooms-banner-main {
+    @include banner-cmn-padding;
+    padding: 80px 0;
+    padding-top: 120px;
+    background-image: url('../images/rooms-banner.jpg');
+}
+
+// Rooms banner Ends
+// 
+// Rooms Section main Starts
+.rooms-section-main {
+    @include section-cmn-padding;
+    p.description {
+        margin-bottom: 20px;
+    }
+    .des-content {
+        margin-bottom: 40px;
+    }
+    .accommodation-box {
+        background-color: #f3f3f3;
+        padding: 20px;
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+        min-height: 530px;
+    }
+    h6.title {
+        margin: 10px 0;
+        min-height: 48px;
+    }
+    .blog-des {
+        li {
+            position: relative;
+            color: #212529;
+            padding-left: 30px;
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+        li i {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: $green;
+            font-size: 15px;
+        }
+    }
+}
+
+// Rooms Section main Ends
+// 
+// Resort details starts
+.resort-details-main {
+    padding: 40px 0;
+    background-image: url('../images/aboutus-video-bg.jpg');
+    border-top: 2px solid red;
+    h3.title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .accommodation-box {
+        background-color: #f3f3f3;
+        padding: 20px;
+    }
+    .accommodation-img {
+        width: 100%;
+    }
+    h6.title {
+        margin: 10px 0;
+    }
+    .blog-des {
+        li {
+            position: relative;
+            color: #212529;
+            padding-left: 30px;
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+        li i {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: $green;
+            font-size: 15px;
+        }
+    }
+}
+
+// Resort details Ends

@@ -1,0 +1,1620 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Auther name
+* Template Name : Template name
+* File          : Main CSS file
+* Version       : 1.0
+* ---------------------------------------------------------------------------------------- */
+/* INDEX
+----------------------------------------------------------------------------------------
+01. General css
+02. 
+03. 
+-------------------------------------------------------------------------------------- */
+/************************************/
+/***** 	   01. General css		 ****/
+/************************************/
+body {
+  font-size: 18px;
+  color: #212529;
+  font-weight: 500;
+  font-family: Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #000;
+}
+
+a {
+  transition: all 0.5s;
+}
+
+h3.title {
+  font-size: 36px;
+  color: #000;
+  font-family: "Arbutus Slab", serif;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+h3.adventure-title {
+  font-size: 30px;
+}
+
+p.description {
+  line-height: 24px;
+  color: #212529;
+  font-size: 16px;
+}
+p.description span {
+  color: #8cc43f;
+  display: inline-block;
+  font-weight: 600;
+}
+
+p.subtitle {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Arbutus Slab", serif;
+  font-style: italic;
+}
+
+p.client-des {
+  font-family: "Cuprum", sans-serif;
+  font-size: 22px;
+  color: #5e5e5e;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+h4.title {
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+
+h5.title {
+  font-family: "Arbutus Slab", serif;
+  color: #000;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h5.about-title {
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h6.title {
+  font-size: 20px;
+  font-family: "Arbutus Slab", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  color: #000;
+}
+
+a:hover,
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+input.form-control:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+button:focus,
+input:focus,
+img:focus,
+.slick-slide:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.transition {
+  transition: 700ms;
+}
+
+.page-link {
+  font-size: 16px;
+  color: #000;
+}
+
+.page-item.active .page-link {
+  background-color: #6c9e28;
+  border-color: #6c9e28;
+  color: #fff;
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.page-link:focus {
+  box-shadow: none;
+}
+
+/************************************/
+/***** 	   02. Header css		 ****/
+/************************************/
+header .topbar {
+  background-color: #000;
+  padding: 10px 0;
+  position: relative;
+  z-index: 10;
+}
+header .topbar .logo {
+  width: 150px;
+  height: 80px;
+}
+header .topbar .location-content {
+  height: 100%;
+  color: #fff;
+}
+header .topbar .icon i {
+  font-size: 26px;
+  margin-right: 20px;
+}
+header .topbar .media-body h5,
+header .topbar .media-body p {
+  color: #fff;
+}
+header .topbar h5.title {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+header .topbar a {
+  color: #8cc43f;
+  font-size: 14px;
+}
+header .navbar {
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+header .navbar .navbar-nav .nav-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: black;
+  padding: 8px 10px;
+}
+header .navbar .navbar-nav .nav-link:hover {
+  color: #8cc43f;
+}
+header .navbar .btn {
+  padding: 8px 14px;
+  background-color: red;
+  color: #fff !important;
+  border-radius: 0;
+}
+header .navbar .btn:hover {
+  background-color: #e40000 !important;
+}
+header .navbar .dropdown-menu {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+}
+header .navbar .dropdown-item.active,
+header .navbar .dropdown-item:hover,
+header .navbar .dropdown-item:active {
+  color: #fff;
+  background-color: #6c9e28;
+}
+header .header-main {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+/************************************/
+/***** 	   03(1). Banner css	 ****/
+/************************************/
+.banner-section-main {
+  width: 100%;
+  position: relative;
+}
+.banner-section-main .banner-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -122px;
+  z-index: 0;
+}
+.banner-section-main .banner-btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+  margin-top: 20px;
+}
+.banner-section-main .banner-btn:hover {
+  background-color: #6c9e28;
+}
+.banner-section-main button.slick-arrow {
+  background: transparent;
+  position: absolute;
+  color: #fff;
+  padding: 9px 13px;
+  border: 1px solid #fff;
+  line-height: 12px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+.banner-section-main .banner-pre-btn {
+  left: 20px;
+  top: 55%;
+}
+.banner-section-main .banner-nxt-btn {
+  right: 20px;
+  top: 55%;
+}
+
+/************************************/
+/***** 	   03(2). Home Event css	 ****/
+/************************************/
+.home-event-main {
+  padding: 80px 0;
+}
+.home-event-main p.description {
+  margin-bottom: 17px;
+}
+.home-event-main a.btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+}
+.home-event-main a.btn:hover {
+  background-color: #6c9e28;
+}
+.home-event-main .event-inner {
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+}
+.home-event-main .event-inner .title-content {
+  padding: 30px 20px;
+  text-align: center;
+  background-color: #e35d5d;
+  color: #fff;
+}
+.home-event-main .event-inner p.subtitle {
+  margin-top: 5px;
+}
+.home-event-main .event-inner .date-content {
+  padding: 20px;
+}
+.home-event-main .event-inner .date-title {
+  font-size: 60px;
+  font-weight: bold;
+  color: #9dd058;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.home-event-main .event-inner .month {
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/************************************/
+/***** 	   04. Things css	 ****/
+/************************************/
+.things-main {
+  padding: 80px 0;
+  background-image: url("../images/things-bg.jpg");
+  background-repeat: no-repeat;
+  padding-top: 0;
+}
+.things-main .content-inner {
+  padding: 44px 45px;
+  background-color: #fff;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+}
+.things-main h3.title {
+  text-align: center;
+}
+.things-main p.description {
+  line-height: 28px;
+}
+.things-main .btn-inn {
+  text-align: center;
+}
+.things-main .btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+  border-radius: 20px;
+  margin-top: 25px;
+  padding: 6px 26px;
+}
+.things-main .btn:hover {
+  background-color: #6c9e28;
+}
+.things-main .img-content {
+  position: relative;
+  transition: all 0.4s;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+}
+.things-main .img-content img {
+  width: 100%;
+  height: 235px;
+  object-fit: cover;
+}
+.things-main .img-content span {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}
+.things-main .img-content:hover {
+  transform: scale(0.9);
+  transition: all 0.4s;
+}
+.things-main .img-content:first-child {
+  margin-bottom: 20px;
+}
+
+/************************************/
+/***** 	   05. Client Exp css	 ****/
+/************************************/
+.client-experience-main {
+  padding: 80px 0;
+}
+.client-experience-main .blog-content {
+  padding: 0 45px;
+  padding-right: 80px;
+}
+.client-experience-main h3.title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.client-experience-main p.client-des {
+  padding: 20px 0;
+}
+.client-experience-main p.client-des--second {
+  color: #8cc43f;
+  font-size: 16px;
+}
+
+/****************************************/
+/***** 	   06. Accommodation css	 ****/
+/****************************************/
+.accommodation-main {
+  padding: 80px 0;
+  background-image: url("../images/accommodation-bg.jpg");
+}
+.accommodation-main h3.title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.accommodation-main .accommodation-box {
+  background-color: #c5c5c5;
+  padding: 20px;
+}
+.accommodation-main h6.title {
+  margin: 10px 0;
+}
+.accommodation-main .blog-des li {
+  position: relative;
+  color: #212529;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.accommodation-main .blog-des li i {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 15px;
+}
+
+/********************************/
+/***** 	   07. Gallery css	 ****/
+/********************************/
+.home-gallery-main {
+  padding: 80px 0;
+  padding-bottom: 55px;
+}
+.home-gallery-main h3.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.home-gallery-main a {
+  margin-bottom: 25px;
+  display: block;
+  position: relative;
+  transition: all 0.6s;
+}
+.home-gallery-main .layer {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.6s;
+}
+.home-gallery-main a:hover .layer {
+  width: 100%;
+  transition: all 0.6s;
+}
+
+/********************************/
+/***** 	   08. Footer css	 ****/
+/********************************/
+footer .footer-top {
+  padding: 80px 0;
+  background-color: #2b2b2b;
+}
+footer h3.footer-title {
+  color: #fff;
+  font-size: 22px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px dotted;
+  display: inline-block;
+}
+footer h3.footer-title--bottom {
+  border: 0;
+  margin: 0;
+  padding: 10px 0;
+}
+footer .footer-bottom {
+  background-color: #2b2b2b;
+  border-top: 1px solid gray;
+  padding: 30px 0;
+}
+footer p.footer-des {
+  color: #666666;
+  font-size: 15px;
+  line-height: 24px;
+}
+footer p.footer-des--contact {
+  color: #fff;
+}
+footer p.footer-des--mail {
+  color: #8cc43f;
+  text-transform: uppercase;
+}
+footer .footer-links a {
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 14PX;
+  font-weight: 500PX;
+  line-height: 30PX;
+}
+footer .footer-links a:hover {
+  color: #8cc43f;
+}
+footer .form-control {
+  border-radius: 25px;
+  background-color: #3a3b3a;
+  height: 46px;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 0 20px;
+}
+footer .form-control:focus {
+  background-color: #3a3b3a;
+  color: #fff;
+}
+footer .input-group-append .btn,
+footer .input-group-prepend .btn {
+  z-index: 32;
+}
+footer .btn {
+  padding: 0 20px;
+  border: 0;
+  background-color: #8cc43f;
+  color: #fff;
+  border-radius: 25px !important;
+  margin-left: -20px;
+}
+footer .btn:hover {
+  background-color: #6c9e28;
+  color: #fff;
+}
+footer .social-links {
+  text-align: right;
+}
+footer .social-links a {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin: 4px 2px;
+  font-size: 16px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  background: #454443;
+}
+footer .social-links a:hover {
+  background-color: #353535;
+  color: #6c9e28;
+}
+
+/******************************************/
+/***** 	   09. Temprature Widget css   ***/
+/*****************************************/
+.temprature-widget-main {
+  position: fixed;
+  top: 2px;
+  right: 2px;
+  z-index: 999;
+}
+.temprature-widget-main .weather-info {
+  width: 110px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  background: #8cc43f;
+  transition: transform 0.2s ease;
+}
+.temprature-widget-main .weather-info-wrapper {
+  display: grid;
+  grid-column-gap: 10px;
+  height: 100%;
+  margin: auto;
+  color: #FFF;
+}
+.temprature-widget-main .info-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.temprature-widget-main .info-date h1 {
+  margin-bottom: 0.65rem;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+.temprature-widget-main .info-weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.temprature-widget-main .weather-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@keyframes animation-icon {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+.temprature-widget-main .weather-sunny {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 60 60' style='enable-background:new 0 0 60 60;' xml:space='preserve'%3E%3Cg%3E%3Cpath style='fill:%23F0C419;' d='M30,0c-0.552,0-1,0.448-1,1v6c0,0.552,0.448,1,1,1s1-0.448,1-1V1C31,0.448,30.552,0,30,0z'/%3E%3Cpath style='fill:%23F0C419;' d='M30,52c-0.552,0-1,0.448-1,1v6c0,0.552,0.448,1,1,1s1-0.448,1-1v-6C31,52.448,30.552,52,30,52z'/%3E%3Cpath style='fill:%23F0C419;' d='M59,29h-6c-0.552,0-1,0.448-1,1s0.448,1,1,1h6c0.552,0,1-0.448,1-1S59.552,29,59,29z'/%3E%3Cpath style='fill:%23F0C419;' d='M8,30c0-0.552-0.448-1-1-1H1c-0.552,0-1,0.448-1,1s0.448,1,1,1h6C7.552,31,8,30.552,8,30z'/%3E%3Cpath style='fill:%23F0C419;' d='M46.264,14.736c0.256,0,0.512-0.098,0.707-0.293l5.736-5.736c0.391-0.391,0.391-1.023,0-1.414 s-1.023-0.391-1.414,0l-5.736,5.736c-0.391,0.391-0.391,1.023,0,1.414C45.752,14.639,46.008,14.736,46.264,14.736z'/%3E%3Cpath style='fill:%23F0C419;' d='M13.029,45.557l-5.736,5.736c-0.391,0.391-0.391,1.023,0,1.414C7.488,52.902,7.744,53,8,53 s0.512-0.098,0.707-0.293l5.736-5.736c0.391-0.391,0.391-1.023,0-1.414S13.42,45.166,13.029,45.557z'/%3E%3Cpath style='fill:%23F0C419;' d='M46.971,45.557c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l5.736,5.736 C51.488,52.902,51.744,53,52,53s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L46.971,45.557z'/%3E%3Cpath style='fill:%23F0C419;' d='M8.707,7.293c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414l5.736,5.736 c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293c0.391-0.391,0.391-1.023,0-1.414L8.707,7.293z'/%3E%3Cpath style='fill:%23F0C419;' d='M50.251,21.404c0.162,0.381,0.532,0.61,0.921,0.61c0.13,0,0.263-0.026,0.39-0.08l2.762-1.172 c0.508-0.216,0.746-0.803,0.53-1.311s-0.804-0.746-1.311-0.53l-2.762,1.172C50.272,20.309,50.035,20.896,50.251,21.404z'/%3E%3Cpath style='fill:%23F0C419;' d='M9.749,38.596c-0.216-0.508-0.803-0.746-1.311-0.53l-2.762,1.172 c-0.508,0.216-0.746,0.803-0.53,1.311c0.162,0.381,0.532,0.61,0.921,0.61c0.13,0,0.263-0.026,0.39-0.08l2.762-1.172 C9.728,39.691,9.965,39.104,9.749,38.596z'/%3E%3Cpath style='fill:%23F0C419;' d='M54.481,38.813L51.7,37.688c-0.511-0.207-1.095,0.041-1.302,0.553 c-0.207,0.512,0.041,1.095,0.553,1.302l2.782,1.124c0.123,0.049,0.25,0.073,0.374,0.073c0.396,0,0.771-0.236,0.928-0.626 C55.241,39.603,54.994,39.02,54.481,38.813z'/%3E%3Cpath style='fill:%23F0C419;' d='M5.519,21.188L8.3,22.312c0.123,0.049,0.25,0.073,0.374,0.073c0.396,0,0.771-0.236,0.928-0.626 c0.207-0.512-0.041-1.095-0.553-1.302l-2.782-1.124c-0.513-0.207-1.095,0.04-1.302,0.553C4.759,20.397,5.006,20.98,5.519,21.188z' /%3E%3Cpath style='fill:%23F0C419;' d='M39.907,50.781c-0.216-0.508-0.803-0.745-1.311-0.53c-0.508,0.216-0.746,0.803-0.53,1.311 l1.172,2.762c0.162,0.381,0.532,0.61,0.921,0.61c0.13,0,0.263-0.026,0.39-0.08c0.508-0.216,0.746-0.803,0.53-1.311L39.907,50.781z' /%3E%3Cpath style='fill:%23F0C419;' d='M21.014,9.829c0.13,0,0.263-0.026,0.39-0.08c0.508-0.216,0.746-0.803,0.53-1.311l-1.172-2.762 c-0.215-0.509-0.802-0.747-1.311-0.53c-0.508,0.216-0.746,0.803-0.53,1.311l1.172,2.762C20.254,9.6,20.625,9.829,21.014,9.829z'/%3E%3Cpath style='fill:%23F0C419;' d='M21.759,50.398c-0.511-0.205-1.095,0.04-1.302,0.553l-1.124,2.782 c-0.207,0.512,0.041,1.095,0.553,1.302c0.123,0.049,0.25,0.073,0.374,0.073c0.396,0,0.771-0.236,0.928-0.626l1.124-2.782 C22.519,51.188,22.271,50.605,21.759,50.398z'/%3E%3Cpath style='fill:%23F0C419;' d='M38.615,9.675c0.396,0,0.771-0.236,0.928-0.626l1.124-2.782c0.207-0.512-0.041-1.095-0.553-1.302 c-0.511-0.207-1.095,0.041-1.302,0.553L37.688,8.3c-0.207,0.512,0.041,1.095,0.553,1.302C38.364,9.651,38.491,9.675,38.615,9.675z' /%3E%3C/g%3E%3Ccircle style='fill:%23F0C419;' cx='30' cy='30' r='20'/%3E%3Ccircle style='fill:%23EDE21B;' cx='30' cy='30' r='15'/%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+  transition: all 0.2s ease-in;
+  animation: animation-icon 0.8s infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.temprature-widget-main .weather-temperature {
+  font-size: 18;
+  font-weight: 800;
+}
+.temprature-widget-main .weather-city {
+  margin-top: 0.65rem;
+  font-size: 14px;
+}
+
+.weather-modal {
+  padding-right: 0 !important;
+}
+.weather-modal .modal-content {
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+.weather-modal .modal-header {
+  padding-bottom: 0;
+  border-bottom: 0;
+  position: relative;
+}
+.weather-modal .modal-header button {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0;
+  font-size: 18px;
+}
+.weather-modal .modal-header .modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+.about-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/About-banner.jpg");
+}
+.about-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.about-counter-main {
+  padding: 80px 0;
+}
+.about-counter-main h3.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.about-counter-main p.description {
+  width: 64%;
+  margin: auto;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  color: #666666;
+  line-height: 1.62857;
+  padding-bottom: 40px;
+}
+.about-counter-main .counter-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.about-counter-main .counter-content {
+  padding: 10px 20px;
+}
+.about-counter-main .counter-title {
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.about-counter-main .counter-des {
+  color: #000;
+  font-weight: 150;
+  font-size: 16px;
+  line-height: 1.62857;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+}
+
+.aboutus-video-main {
+  padding: 80px 0;
+  background-image: url("../images/aboutus-video-bg.jpg");
+}
+.aboutus-video-main .video-inner {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.aboutus-video-main .about-content {
+  margin-top: 20px;
+}
+.aboutus-video-main h5.about-title i {
+  color: #8cc43f;
+  font-size: 30px;
+  margin-right: 15px;
+}
+.aboutus-video-main p.description {
+  color: #999;
+}
+
+.amenities-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/Amenities-banner.jpg");
+}
+.amenities-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.amenities-section-main {
+  padding: 80px 0;
+  padding-bottom: 50px;
+}
+.amenities-section-main .amenities-content {
+  transition: all 0.3s;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+  border: 0;
+  margin-bottom: 30px;
+}
+.amenities-section-main .link-grp {
+  width: 100%;
+  text-align: center;
+}
+.amenities-section-main .link-grp a {
+  color: #8cc43f;
+  font-size: 16px;
+}
+.amenities-section-main .link-grp a:hover {
+  color: #6c9e28;
+}
+.amenities-section-main .img-grp {
+  position: relative;
+}
+.amenities-section-main .img-grp img {
+  height: 230px;
+}
+.amenities-section-main .layer {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.6s;
+}
+.amenities-section-main .amenities-content:hover .layer {
+  height: 100%;
+  transition: all 0.6s;
+}
+.amenities-section-main .card-title {
+  text-align: center;
+}
+.amenities-section-main .comming-soon {
+  position: absolute;
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: red;
+  color: #fff;
+  font-size: 14px;
+  top: 5px;
+  right: 5px;
+  width: fit-content;
+}
+.amenities-section-main h3.above-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.amenities-section-main .full-section {
+  margin-bottom: 30px;
+}
+.amenities-section-main .full-section h5 {
+  margin-bottom: 20px;
+}
+.amenities-section-main .full-section p.description {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #555b61;
+}
+.amenities-section-main .inner-des-content {
+  padding-left: 20px;
+}
+
+.amenities-time-main {
+  padding: 80px 0;
+  background-image: url("../images/aboutus-video-bg.jpg");
+}
+.amenities-time-main h3.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.amenities-time-main p.description {
+  color: #666666;
+  width: 55%;
+  margin: auto;
+  margin-bottom: 40px;
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+}
+.amenities-time-main .btn-grp {
+  text-align: center;
+}
+.amenities-time-main .btn-grp .btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 8px 30px;
+}
+.amenities-time-main .btn-grp .btn:hover {
+  background-color: #6c9e28;
+}
+
+.contactus-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/contact-banner.jpg");
+}
+.contactus-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.contactus-section-main {
+  padding: 80px 0;
+}
+.contactus-section-main p.description {
+  color: #666666;
+  text-align: center;
+}
+.contactus-section-main .add-title {
+  margin-bottom: 40px;
+}
+.contactus-section-main .add-des {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.contactus-section-main .contact-inner {
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+  padding: 30px 60px;
+}
+.contactus-section-main .address-content {
+  padding: 20px 30px;
+}
+.contactus-section-main .b-line {
+  border-right: 1px solid #b8b8b8;
+}
+.contactus-section-main h6.title {
+  text-align: center;
+  font-family: unset;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.contactus-section-main .get-form {
+  padding-top: 40px;
+}
+.contactus-section-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contactus-section-main .form-control {
+  height: 46px;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.contactus-section-main .form-control:focus {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.contactus-section-main textarea {
+  height: 180px !important;
+  resize: none;
+}
+.contactus-section-main .form-group {
+  margin-bottom: 20px;
+}
+.contactus-section-main .btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+  margin-top: 20px;
+}
+.contactus-section-main .btn:hover {
+  background-color: #6c9e28;
+}
+
+.dining-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/dining-banner.jpg");
+}
+.dining-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.dining-section-main {
+  padding: 80px 0;
+}
+.dining-section-main .des-content {
+  margin-bottom: 60px;
+}
+.dining-section-main p.description {
+  margin-bottom: 25px;
+}
+.dining-section-main h3.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.dining-section-main .specialities-inner img {
+  margin-bottom: 20px;
+  height: 230px;
+  width: 100%;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/gallery-banner.jpg");
+}
+.gallery-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.gallery-section-main {
+  padding: 80px 0;
+}
+.gallery-section-main .gallery-inner img {
+  width: 100%;
+  height: 180px;
+  transition: all 0.5s;
+}
+.gallery-section-main h3.title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.gallery-section-main .transit a {
+  overflow: hidden;
+  display: block;
+  height: 180px;
+  margin-bottom: 30px;
+  transition: all 0.5s;
+}
+.gallery-section-main .transit a:hover img {
+  transform: scale(1.2);
+}
+.gallery-section-main .page-link {
+  font-size: 16px;
+  color: #000;
+}
+.gallery-section-main .page-item.active .page-link {
+  background-color: #6c9e28;
+  border-color: #6c9e28;
+  color: #fff;
+}
+.gallery-section-main .pagination {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.resort-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/resort-banner.jpg");
+}
+.resort-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.resort-section-main {
+  padding: 80px 0;
+}
+.resort-section-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.resort-section-main .accommodation-box {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+.resort-section-main h6.title {
+  margin: 10px 0;
+}
+.resort-section-main .blog-des li {
+  position: relative;
+  color: #212529;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.resort-section-main .blog-des li i {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  font-size: 15px;
+}
+
+.resort-details-main {
+  padding: 40px 0;
+  background-image: url("../images/aboutus-video-bg.jpg");
+  border-top: 2px solid red;
+}
+.resort-details-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.resort-details-main .accommodation-box {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+.resort-details-main h6.title {
+  margin: 10px 0;
+}
+.resort-details-main .blog-des li {
+  position: relative;
+  color: #212529;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.resort-details-main .blog-des li i {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: #8cc43f;
+  font-size: 15px;
+}
+
+.resort-facilities-main {
+  padding: 80px 0;
+  padding-bottom: 50px;
+}
+.resort-facilities-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.resort-facilities-main img {
+  margin-bottom: 30px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.rooms-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  padding: 80px 0;
+  padding-top: 120px;
+  background-image: url("../images/rooms-banner.jpg");
+}
+.rooms-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.rooms-section-main {
+  padding: 80px 0;
+}
+.rooms-section-main p.description {
+  margin-bottom: 20px;
+}
+.rooms-section-main .des-content {
+  margin-bottom: 40px;
+}
+.rooms-section-main .accommodation-box {
+  background-color: #f3f3f3;
+  padding: 20px;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  min-height: 530px;
+}
+.rooms-section-main h6.title {
+  margin: 10px 0;
+  min-height: 48px;
+}
+.rooms-section-main .blog-des li {
+  position: relative;
+  color: #212529;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 10px 0;
+}
+.rooms-section-main .blog-des li i {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: #8cc43f;
+  font-size: 15px;
+}
+
+.resort-details-main {
+  padding: 40px 0;
+  background-image: url("../images/aboutus-video-bg.jpg");
+  border-top: 2px solid red;
+}
+.resort-details-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.resort-details-main .accommodation-box {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
+.resort-details-main .accommodation-img {
+  width: 100%;
+}
+.resort-details-main h6.title {
+  margin: 10px 0;
+}
+.resort-details-main .blog-des li {
+  position: relative;
+  color: #212529;
+  padding-left: 30px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.resort-details-main .blog-des li i {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: #8cc43f;
+  font-size: 15px;
+}
+
+.adventure-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  padding: 80px 0;
+  padding-top: 120px;
+  background-image: url("../images/adventure-banner.jpg");
+}
+.adventure-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.adventure-section-main {
+  padding: 80px 0;
+}
+.adventure-section-main h3.adventure-title {
+  margin-bottom: 15px;
+}
+.adventure-section-main p.description {
+  line-height: 27px;
+  text-align: justify;
+  font-size: 15px;
+}
+.adventure-section-main .main-content {
+  margin-bottom: 40px;
+}
+.adventure-section-main .zag-left {
+  padding-right: 15px;
+}
+.adventure-section-main .zag-right {
+  padding-left: 15px;
+}
+
+.tourist-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/tourist-banner.jpg");
+}
+.tourist-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.tourist-section-main {
+  padding: 80px 0;
+  padding-bottom: 50px;
+}
+.tourist-section-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tourist-section-main p.description {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.tourist-section-main .tourist-content {
+  margin-bottom: 30px;
+  padding: 15px;
+  padding-bottom: 0;
+  border-radius: 0;
+  text-align: center;
+  border: 0;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s;
+}
+.tourist-section-main .tourist-content:hover {
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+}
+.tourist-section-main .tourist-content img {
+  width: 100%;
+  height: 245px;
+}
+.tourist-section-main .tourist-content .btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+  padding: 6px 18px;
+  text-transform: capitalize;
+}
+.tourist-section-main .tourist-content .btn:hover {
+  background-color: #6c9e28;
+}
+
+.tourist-modal .modal-content {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+}
+.tourist-modal .modal-header {
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+.tourist-modal .modal-body {
+  padding: 20px 20px;
+}
+.tourist-modal p.description {
+  line-height: 27px;
+  color: #474a4c;
+  font-size: 15px;
+}
+
+.event-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/contact-banner.jpg");
+}
+.event-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.event-section-main {
+  padding: 80px 0;
+}
+.event-section-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.event-section-main .fc-event,
+.event-section-main .fc-event-dot {
+  background-color: #8cc43f !important;
+  border-color: #8cc43f;
+  color: #fff !important;
+  padding: 10px;
+  text-align: center;
+}
+.event-section-main .fc-toolbar {
+  margin-bottom: 25px;
+}
+.event-section-main .fc-button-group button {
+  padding: 4px 8px;
+  border-radius: 0;
+  background-color: #6c9e28;
+  color: #fff;
+  border: 0;
+  margin: 0 5px;
+  background-image: unset;
+  font-size: 16px;
+}
+.event-section-main .fc .fc-toolbar > * > * {
+  border-radius: 0;
+}
+.event-section-main .fc-unthemed td.fc-today {
+  background: #1f30a9;
+  color: #fff;
+}
+
+.booking-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/contact-banner.jpg");
+}
+.booking-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.booking-section-main {
+  padding: 80px 0;
+}
+.booking-section-main p.description {
+  color: #666666;
+  text-align: center;
+}
+.booking-section-main .add-title {
+  margin-bottom: 40px;
+}
+.booking-section-main .add-des {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.booking-section-main .contact-inner {
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+  padding: 30px 60px;
+}
+.booking-section-main .address-content {
+  padding: 20px 30px;
+}
+.booking-section-main .b-line {
+  border-right: 1px solid #b8b8b8;
+}
+.booking-section-main h6.title {
+  text-align: center;
+  font-family: unset;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.booking-section-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.booking-section-main .form-group {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.booking-section-main .form-group:focus {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.booking-section-main .form-control {
+  height: 46px;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+}
+.booking-section-main textarea {
+  height: 180px !important;
+  resize: none;
+}
+.booking-section-main .form-group {
+  margin-bottom: 20px;
+}
+.booking-section-main .btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+  margin-top: 20px;
+}
+.booking-section-main .btn:hover {
+  background-color: #6c9e28;
+}
+.booking-section-main .input-group-text {
+  border: 0;
+  background: transparent;
+}
+
+.feedback-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/contact-banner.jpg");
+}
+.feedback-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.Feedback-section-main {
+  padding: 80px 0;
+}
+.Feedback-section-main p.description {
+  color: #666666;
+  text-align: center;
+}
+.Feedback-section-main .add-title {
+  margin-bottom: 40px;
+}
+.Feedback-section-main .add-des {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.Feedback-section-main .contact-inner {
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+  padding: 30px 60px;
+}
+.Feedback-section-main .address-content {
+  padding: 20px 30px;
+}
+.Feedback-section-main .b-line {
+  border-right: 1px solid #b8b8b8;
+}
+.Feedback-section-main h6.title {
+  text-align: center;
+  font-family: unset;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.Feedback-section-main .get-form {
+  padding-top: 40px;
+}
+.Feedback-section-main h3.title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.Feedback-section-main .form-control {
+  height: 46px;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.Feedback-section-main .form-control:focus {
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+.Feedback-section-main textarea {
+  height: 180px !important;
+  resize: none;
+}
+.Feedback-section-main .form-group {
+  margin-bottom: 20px;
+}
+.Feedback-section-main .btn {
+  font-size: 16px;
+  color: #fff;
+  background-color: #8cc43f;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 8px 20px;
+  margin-top: 20px;
+}
+.Feedback-section-main .btn:hover {
+  background-color: #6c9e28;
+}
+
+.events-banner-main {
+  padding: 100px 0;
+  padding-top: 145px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 300px;
+  background-image: url("../images/Event-banner.jpg");
+}
+.events-banner-main h3.banner-title {
+  font-family: "Patua One", cursive;
+  font-size: 40px;
+  color: #fff;
+}
+
+.events-section-main {
+  padding: 80px 0;
+  padding-bottom: 50px;
+}
+.events-section-main .amenities-content {
+  transition: all 0.3s;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+  border: 0;
+  margin-bottom: 30px;
+}
+.events-section-main .img-grp {
+  position: relative;
+}
+.events-section-main .img-grp img {
+  height: 230px;
+  width: 100%;
+}
+.events-section-main .layer {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.6s;
+}
+.events-section-main .amenities-content:hover .layer {
+  height: 100%;
+  transition: all 0.6s;
+}
+.events-section-main .event-title {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.events-section-main .full-section {
+  margin-bottom: 30px;
+}
+.events-section-main .full-section h5 {
+  margin-bottom: 20px;
+}
+.events-section-main .full-section p.description {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #555b61;
+}
+
+/*# sourceMappingURL=style.css.map */

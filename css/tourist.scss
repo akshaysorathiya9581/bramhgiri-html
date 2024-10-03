@@ -1,0 +1,66 @@
+// ********************
+// tourist Page Starts
+// ********************
+// tourist banner Starts
+.tourist-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/tourist-banner.jpg');
+}
+
+// tourist banner Ends
+// 
+// tourist Section main Starts
+.tourist-section-main {
+    @include section-cmn-padding;
+    padding-bottom: 50px;
+    h3.title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    p.description {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .tourist-content {
+        margin-bottom: 30px;
+        padding: 15px;
+        padding-bottom: 0;
+        border-radius: 0;
+        text-align: center;
+        border: 0;
+        box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.4);
+        transition: all 0.5s;
+        &:hover {
+            box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.5);
+        }
+        img {
+            width: 100%;
+            height: 245px;
+        }
+        .btn {
+            @include cmn-btn;
+            padding: 6px 18px;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.tourist-modal {
+    .modal-content {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+    }
+    .modal-header {
+        padding: 15px 20px;
+        text-transform: uppercase;
+    }
+    .modal-body {
+        padding: 20px 20px;
+    }
+    p.description {
+        line-height: 27px;
+        color: #474a4c;
+        font-size: 15px;
+    }
+}
+
+// tourist Section main Ends

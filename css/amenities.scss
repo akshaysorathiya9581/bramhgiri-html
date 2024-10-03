@@ -1,0 +1,119 @@
+// ********************
+// About Page Starts
+// ********************
+// Amenities banner Starts
+.amenities-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/Amenities-banner.jpg');
+}
+
+// Amenities banner Ends
+// 
+// Amenities Section main Starts
+.amenities-section-main {
+    @include section-cmn-padding;
+    padding-bottom: 50px;
+    .amenities-content {
+        transition: all 0.3s;
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+        border: 0;
+        margin-bottom: 30px;
+    }
+    .link-grp {
+        width: 100%;
+        text-align: center;
+        a {
+            color: $green;
+            font-size: 16px;
+            &:hover {
+                color: $btn-hover;
+            }
+        }
+    }
+    .img-grp {
+        position: relative;
+        img {
+            height: 230px;
+        }
+    }
+    .layer {
+        position: absolute;
+        height: 0;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.6s;
+    }
+    .amenities-content:hover {
+        .layer {
+            height: 100%;
+            transition: all 0.6s;
+        }
+    }
+    .card-title {
+        text-align: center;
+    }
+    .comming-soon {
+        position: absolute;
+        display: inline-block;
+        padding: 5px 12px;
+        background-color: red;
+        color: $white;
+        font-size: 14px;
+        top: 5px;
+        right: 5px;
+        width: fit-content;
+    }
+    h3.above-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .full-section {
+        margin-bottom: 30px;
+        h5 {
+            margin-bottom: 20px;
+        }
+        p.description {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #555b61;
+        }
+    }
+    .inner-des-content {
+        padding-left: 20px;
+    }
+}
+
+// Amenities Section main Ends
+// 
+// Amenities Time main Starts
+.amenities-time-main {
+    @include section-cmn-padding;
+    background-image: url('../images/aboutus-video-bg.jpg');
+    h3.title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    p.description {
+        color: $dm-light;
+        width: 55%;
+        margin: auto;
+        margin-bottom: 40px;
+        @include Courgette;
+        font-size: 18px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .btn-grp {
+        text-align: center;
+        .btn {
+            @include cmn-btn;
+            font-size: 14px;
+            border-radius: 25px;
+            padding: 8px 30px;
+        }
+    }
+}
+
+// Amenities Time main Ends
+//

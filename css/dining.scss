@@ -1,0 +1,33 @@
+// ********************
+// Dining Page Starts
+// ********************
+// Dining banner Starts
+.dining-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/dining-banner.jpg');
+}
+
+// Dining banner Ends
+// 
+// Dining Section Starts
+.dining-section-main {
+    @include section-cmn-padding;
+    .des-content {
+        margin-bottom: 60px;
+    }
+    p.description {
+        margin-bottom: 25px;
+    }
+    h3.title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .specialities-inner img {
+        margin-bottom: 20px;
+        height: 230px;
+        width: 100%;
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    }
+}
+
+// Dining Section Ends

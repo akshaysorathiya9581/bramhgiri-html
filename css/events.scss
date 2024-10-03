@@ -1,0 +1,62 @@
+// ********************
+// Event Page Starts
+// ********************
+// events banner Starts
+.events-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/Event-banner.jpg');
+}
+
+// events banner Ends
+// 
+// Events Section main Starts
+.events-section-main {
+    @include section-cmn-padding;
+    padding-bottom: 50px;
+    .amenities-content {
+        transition: all 0.3s;
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+        border: 0;
+        margin-bottom: 30px;
+    }
+    .img-grp {
+        position: relative;
+        img {
+            height: 230px;
+            width: 100%;
+        }
+    }
+    .layer {
+        position: absolute;
+        height: 0;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all 0.6s;
+    }
+    .amenities-content:hover {
+        .layer {
+            height: 100%;
+            transition: all 0.6s;
+        }
+    }
+    .event-title {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .full-section {
+        margin-bottom: 30px;
+        h5 {
+            margin-bottom: 20px;
+        }
+        p.description {
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #555b61;
+        }
+    }
+}
+
+// Events Section main Ends
+//

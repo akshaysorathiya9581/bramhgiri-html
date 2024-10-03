@@ -1,0 +1,79 @@
+// ********************
+// Booking form Page Starts
+// ********************
+// Booking form banner Starts
+.booking-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/contact-banner.jpg');
+}
+
+// Booking Form banner Ends
+// 
+// Booking Form section main Starts
+.booking-section-main {
+    @include section-cmn-padding;
+    p.description {
+        color: $dm-light;
+        text-align: center;
+    }
+    .add-title {
+        margin-bottom: 40px;
+    }
+    .add-des {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+    .contact-inner {
+        box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.3);
+        padding: 30px 60px;
+    }
+    .address-content {
+        padding: 20px 30px;
+    }
+    .b-line {
+        border-right: 1px solid #b8b8b8;
+    }
+    h6.title {
+        text-align: center;
+        font-family: unset;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .get-form {
+        // padding-top: 40px;
+    }
+    h3.title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .form-group {
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+        &:focus {
+            box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+        }
+    }
+    .form-control {
+        height: 46px;
+        background: transparent;
+        border-radius: 0;
+        border: 0;
+    }
+    textarea {
+        height: 180px !important;
+        resize: none;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .btn {
+        @include cmn-btn;
+        margin-top: 20px;
+    }
+    .input-group-text {
+        border: 0;
+        background: transparent;
+    }
+}
+
+//  Booking Form section main Ends

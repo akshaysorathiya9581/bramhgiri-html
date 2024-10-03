@@ -1,0 +1,36 @@
+// ********************
+// Adventure Page Starts
+// ********************
+// Adventure banner Starts
+.adventure-banner-main {
+    @include banner-cmn-padding;
+    padding: 80px 0;
+    padding-top: 120px;
+    background-image: url('../images/adventure-banner.jpg');
+}
+
+// Adventure banner Ends
+// 
+// Adventure banner Starts
+.adventure-section-main {
+    @include section-cmn-padding;
+    h3.adventure-title {
+        margin-bottom: 15px;
+    }
+    p.description {
+        line-height: 27px;
+        text-align: justify;
+        font-size: 15px;
+    }
+    .main-content {
+        margin-bottom: 40px;
+    }
+    .zag-left {
+        padding-right: 15px;
+    }
+    .zag-right {
+        padding-left: 15px;
+    }
+}
+
+// Adventure banner Ends

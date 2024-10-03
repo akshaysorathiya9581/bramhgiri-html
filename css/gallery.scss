@@ -1,0 +1,56 @@
+// ********************
+// Gallery Page Starts
+// ********************
+// Gallery banner Starts
+.gallery-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/gallery-banner.jpg');
+}
+
+// Gallery banner Ends
+// 
+// Gallery Section main Starts
+.gallery-section-main {
+    @include section-cmn-padding;
+    .gallery-inner {
+        img {
+            width: 100%;
+            height: 180px;
+            transition: all 0.5s;
+        }
+    }
+    h3.title {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .transit a {
+        overflow: hidden;
+        display: block;
+        height: 180px;
+        margin-bottom: 30px;
+        transition: all 0.5s;
+    }
+    .transit a:hover img {
+        transform: scale(1.2);
+    }
+    .page-link {
+        font-size: 16px;
+        color: $black;
+    }
+    .page-item.active .page-link {
+        background-color: $btn-hover;
+        border-color: $btn-hover;
+        color: $white;
+    }
+    .pagination {
+        justify-content: center;
+        margin-top: 10px;
+    }
+    // .page-link:hover {
+    //     background-color: $btn-hover;
+    //     border-color: $btn-hover;
+    //     color: $white;
+    // }
+}
+
+// Gallery Section main Ends

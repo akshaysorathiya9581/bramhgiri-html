@@ -1,0 +1,74 @@
+// ********************
+// About Page Starts
+// ********************
+// About banner Starts
+.about-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/About-banner.jpg');
+}
+
+// About counter Starts
+.about-counter-main {
+    @include section-cmn-padding;
+    h3.title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    p.description {
+        width: 64%;
+        margin: auto;
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+        color: #666666;
+        line-height: 1.62857;
+        padding-bottom: 40px;
+    }
+    .counter-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .counter-content {
+        padding: 10px 20px;
+    }
+    .counter-title {
+        color: $black;
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .counter-des {
+        color: $black;
+        font-weight: 150;
+        font-size: 16px;
+        line-height: 1.62857;
+        text-align: center;
+        font-family: 'Hind', sans-serif;
+    }
+}
+
+// About counter Ends
+// About Video Starts
+.aboutus-video-main {
+    @include section-cmn-padding;
+    background-image: url('../images/aboutus-video-bg.jpg');
+    .video-inner {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .about-content {
+        margin-top: 20px;
+    }
+    h5.about-title {
+        i {
+            color: $green;
+            font-size: 30px;
+            margin-right: 15px;
+        }
+    }
+    p.description {
+        color: $light-grey;
+    }
+}
+
+// About Video Ends

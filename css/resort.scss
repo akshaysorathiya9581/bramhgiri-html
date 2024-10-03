@@ -1,0 +1,102 @@
+// ********************
+// resort Page Starts
+// ********************
+// resort banner Starts
+.resort-banner-main {
+    @include banner-cmn-padding;
+    background-image: url('../images/resort-banner.jpg');
+}
+
+// resort banner Ends
+// 
+// resort Section main Starts
+.resort-section-main {
+    @include section-cmn-padding;
+    h3.title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .accommodation-box {
+        background-color: #f3f3f3;
+        padding: 20px;
+    }
+    h6.title {
+        margin: 10px 0;
+    }
+    .blog-des {
+        li {
+            position: relative;
+            color: #212529;
+            padding-left: 30px;
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+        li i {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            font-size: 15px;
+        }
+    }
+}
+
+// resort Section main Ends
+// Resort details starts
+.resort-details-main {
+    padding: 40px 0;
+    background-image: url('../images/aboutus-video-bg.jpg');
+    border-top: 2px solid red;
+    h3.title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .accommodation-box {
+        background-color: #f3f3f3;
+        padding: 20px;
+    }
+    h6.title {
+        margin: 10px 0;
+    }
+    .blog-des {
+        li {
+            position: relative;
+            color: #212529;
+            padding-left: 30px;
+            font-size: 15px;
+            line-height: 1.5;
+            font-weight: 400;
+            margin: 15px 0;
+        }
+        li i {
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+            color: $green;
+            // background-color: $green;
+            font-size: 15px;
+        }
+    }
+}
+
+// Resort details Ends
+// resort Facilities main Starts
+.resort-facilities-main {
+    @include section-cmn-padding;
+    padding-bottom: 50px;
+    h3.title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    img {
+        margin-bottom: 30px;
+        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    }
+}
+
+// resort Facilities main Ends
